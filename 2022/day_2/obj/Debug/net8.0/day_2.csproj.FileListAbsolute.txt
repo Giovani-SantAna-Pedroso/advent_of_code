@@ -1,0 +1,15 @@
+/home/giovani/codes/advent_of_code/2022/day_2/bin/Debug/net8.0/day_2
+/home/giovani/codes/advent_of_code/2022/day_2/bin/Debug/net8.0/day_2.deps.json
+/home/giovani/codes/advent_of_code/2022/day_2/bin/Debug/net8.0/day_2.runtimeconfig.json
+/home/giovani/codes/advent_of_code/2022/day_2/bin/Debug/net8.0/day_2.dll
+/home/giovani/codes/advent_of_code/2022/day_2/bin/Debug/net8.0/day_2.pdb
+/home/giovani/codes/advent_of_code/2022/day_2/obj/Debug/net8.0/day_2.GeneratedMSBuildEditorConfig.editorconfig
+/home/giovani/codes/advent_of_code/2022/day_2/obj/Debug/net8.0/day_2.AssemblyInfoInputs.cache
+/home/giovani/codes/advent_of_code/2022/day_2/obj/Debug/net8.0/day_2.AssemblyInfo.cs
+/home/giovani/codes/advent_of_code/2022/day_2/obj/Debug/net8.0/day_2.csproj.CoreCompileInputs.cache
+/home/giovani/codes/advent_of_code/2022/day_2/obj/Debug/net8.0/day_2.sourcelink.json
+/home/giovani/codes/advent_of_code/2022/day_2/obj/Debug/net8.0/day_2.dll
+/home/giovani/codes/advent_of_code/2022/day_2/obj/Debug/net8.0/refint/day_2.dll
+/home/giovani/codes/advent_of_code/2022/day_2/obj/Debug/net8.0/day_2.pdb
+/home/giovani/codes/advent_of_code/2022/day_2/obj/Debug/net8.0/day_2.genruntimeconfig.cache
+/home/giovani/codes/advent_of_code/2022/day_2/obj/Debug/net8.0/ref/day_2.dll
