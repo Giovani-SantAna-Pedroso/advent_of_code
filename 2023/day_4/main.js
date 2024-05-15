@@ -2,9 +2,7 @@ const fs = require('node:fs/promises')
 console.log("day 4")
 // production aa 
 
-// const path_file = "./input/test.txt"
-// const path_file = "./input/test2.txt"
-const path_file = "./input/input.txt"
+const path_file = process.argv[2]
 
 // all the important info of the card such as the raw data 
 // the information of each line etc
@@ -82,6 +80,7 @@ const main = async ()=>{
   // const line = getLinesInfo(file.lines[5])
   // console.log(line)
   const linesData = file.lines.map(line=>getLinesInfo(line))
+
   // console.log(linesData)
   answerPart1(linesData)
   answerPart2(linesData)
