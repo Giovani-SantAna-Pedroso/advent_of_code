@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tJZMFUXfKe8vBXg9YrFxZDyQLeCVJRH0GWecpnN2x3DHSPYWHj9Go9XZjMi0LRWatyYCLvCSERkd3hAlQeEcIQ==",
+  "success": true,
+  "projectFilePath": "/home/giovani/codes/advent_of_code/2022/day_1/day_1.csproj",
+  "expectedPackageFiles": [
+    "/home/giovani/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.4/microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
