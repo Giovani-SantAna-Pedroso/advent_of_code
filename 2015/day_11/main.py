@@ -1,7 +1,8 @@
 import sys
 
 # passowords = ["hijklmmn", 'abbceffg', 'abbcegjk']
-passowords = ["abcdefgh", 'ghijklmn']
+passowords = ['cqjxjnds', 'cqjxxyzz']
+# passowords = ["abcdefgh", 'ghijklmn']
 
 def firs_rule(password):
     for i in range(len(password) -2):
@@ -38,7 +39,7 @@ def increase_password(string):
     arr_str = list(string)
     for i in range(len(arr_str) - 1, -1, -1):
         ascii_char = ord(arr_str[i])
-        print(arr_str)
+        # print(arr_str)
         if ascii_char  <=121:
 
             arr_str[i] = chr(ascii_char +1)
@@ -46,19 +47,20 @@ def increase_password(string):
         else: 
             arr_str[i] = 'a'
 
-        print(string[i], end="")
+        # print(string[i], end="")
 
     return "".join(arr_str)
 
 
-print(increase_password('xzz'))
+# print(increase_password('xzz'))
 
-sys.exit(0)
 for i in passowords:
-    crr_pass = i
+    aaaa = 0
+    crr_pass = increase_password(i)
 
     while True:
         if firs_rule(crr_pass) and sedond_rule(crr_pass) and thrid_rule(crr_pass):
+            print(i, "the next pass", crr_pass)
             break
         crr_pass = increase_password(crr_pass)
 
