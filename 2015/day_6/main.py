@@ -6,7 +6,10 @@ import numpy as np
 
 file_name = sys.argv[1]
 # side_arr = 10
-side_arr = 1000
+if file_name == "test2.txt":
+    side_arr = 10
+else:
+    side_arr = 1000
 
 def get_line_info(line):
     info = {"type":'', 'inital':[0,0] , 'final':[0,0]}
@@ -39,18 +42,16 @@ def show_array_state(arr):
 def change_lights(lights_arr, info):
     change_fun = None
     if info['type'] == 'on':
-        print("on")
         change_fun = lambda i: 1
     elif info['type'] == 'off':
-        print("off")
         change_fun = lambda i: 0
     else :
-        print("off")
         change_fun = lambda i: 0 if i == 1 else 1 
+
     # print("i range: ", range(info['inital'][0], info['final'][0]))
     # print("j range: ", range(info['inital'][1], info['final'][1]+2))
 
-    for i in range(info['inital'][0], info['final'][0]):
+    for i in range(info['inital'][0],  info['final'][0]):
         # print("i: ",i)
         for j in range(info['inital'][1], info['final'][1]):
             # print("j: ",j)
@@ -58,9 +59,9 @@ def change_lights(lights_arr, info):
 
 
 with open(file_name, 'r') as file:
-    # side_arr= 10
+    side_arr= 10
     lights_arr = [[0 for _ in range(side_arr)] for _ in range(side_arr)]
-    # show_array_state(lights_arr)
+    show_array_state(lights_arr)
     ansA = 0 
 
     for line in file:
