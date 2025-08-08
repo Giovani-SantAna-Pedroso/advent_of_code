@@ -2,6 +2,35 @@ import sys
 
 file_name = sys.argv[1]
 
+class Node:
+    def __init__(self,output, input1, input2, ) -> None:
+        ...
+
+        
+
+def parse_node(line):
+    node = {'input1':"", 'input2':"", 'output':'', 'type':''}
+    arr_line = line.split()
+    size_arr = len(arr_line)
+    print(arr_line)
+
+    if size_arr == 3:
+        node['input1'] = arr_line[0]
+        node['type'] = "asign"
+
+    if size_arr == 4:
+        node['input1'] = arr_line[1]
+        node['type'] = "NOT"
+
+    else 
+        node['input1'] = arr_line[1]
+        node['type'] = "NOT"
+
+    
+    node['output'] = arr_line[-1]
+    return node
+
+
 
 operations = {
         "OR": lambda val1, val2: val1 | val2,
@@ -11,45 +40,10 @@ operations = {
         "LSHIFT": lambda val1, val2: val1 << val2,
         }
 
-def convert_to_int(n):
-    if n.isdigit():
-        return int(n)
-    return 0
-
 with open(file_name, 'r') as file:
-    dic_values = {}
-    line =0 
-    for row in file:
-        row = row.strip()
-        # print(line)
-        arr_row = row.split()
-
-        # print(arr_row)
-        # print(arr_row)
-        arr_len = len(arr_row)
-        val_to_change = arr_row[-1]
-
-        # Put a value into a variable
-        if arr_len == 3:
-
-            val = convert_to_int(arr_row[0]) if arr_row[0] not in dic_values else dic_values[arr_row[0]] 
-            # arr_row[0])
-            dic_values[val_to_change]= val
-        elif arr_len == 4:
-            val = convert_to_int(arr_row[1]) if arr_row[1] not in dic_values else dic_values[arr_row[1]] 
-            dic_values[val_to_change] = operations["NOT"](val)
-        else:
-            val1 = convert_to_int(arr_row[0]) if arr_row[0] not in dic_values else dic_values[arr_row[0]] 
-            val2 = convert_to_int(arr_row[2]) if arr_row[2] not in dic_values else dic_values[arr_row[2]] 
-            dic_values[val_to_change] = operations[arr_row[1]](val1,val2)
-
-        # sorted(dic_values, key=lambda)
-        dic_values = dict(sorted(dic_values.items()))
-
-        # for i,j in dic_values.items():
-        #     print(i, j)
-
-        line += 1
-
-    print(dic_values['a'])
+    lines =file.readlines()
+    lines = list(map(lambda i: i.replace("\n",''), lines))
+    for i in lines:
+        parse_node(i)
+    ...
         
