@@ -18,8 +18,8 @@ Legend: - , :Language used to solve the chalenge
 | 5_B  | Python |      |      |      |      |      |      |      | Python     |        |      |
 | 6_A  | Python |      |      |      |      |      |      |      | Typescript |        |      |
 | 6_B  | Python |      |      |      |      |      |      |      | Typescript |        |      |
-| 7_A  |        |      |      |      |      |      |      |      | Python     |        |      |
-| 7_B  |        |      |      |      |      |      |      |      | Python     |        |      |
+| 7_A  | Python |      |      |      |      |      |      |      | Python     |        |      |
+| 7_B  | Python |      |      |      |      |      |      |      | Python     |        |      |
 | 8_A  | Python |      |      |      |      |      |      |      | Typescript |        |      |
 | 8_B  | Python |      |      |      |      |      |      |      |            |        |      |
 | 9_A  |        |      |      |      |      |      |      |      |            |        |      |
