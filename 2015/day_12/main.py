@@ -1,5 +1,7 @@
 import sys
 import re
+import os
+os.system('clear')
 
 file_path = sys.argv[1]
 
@@ -14,18 +16,36 @@ with open(file_path, 'r') as file:
     ansB = 0
 
     for row in file:
+        row = row.strip()
         n_in_line =  sum_num(row) 
         ansA += n_in_line
-        reds = re.findall(r'{.*red*.}',row)
-        print(reds)
-        for i in reds:
-            print(i)
-        sumReds = 0
-        for j in reds:
-           sumReds += sum_num(j) 
-           print(sumReds)
-        ansB += sum_num(row) - sumReds
-        print(sumReds)
+
+
+        left = [ i.span()[0] for i in re.finditer("{", row)]
+        right = [ i.span()[0] for i in re.finditer("}", row)]
+        left.reverse()
+        if len(left) == 0:
+            n_in_line_b = sum_num(row)
+            ansB+= n_in_line_b
+
+        for i in range(len(left)):
+            part_to_analise =  row[left[i]:right[i]]
+            print('og:', row,  end=' -> ' )
+
+            if ':"red"' in part_to_analise:
+                # print('has red')
+                tmp = row[0:left[i]]
+                tmp2 =row[right[i]+1:]
+        #         print("left: ", tmp, end=' --- ')
+        #         print("right: ", tmp2)
+                # print('old row', row)
+        #         # print('tmp', tmp)
+                row = tmp + tmp2
+        #
+        print('new row',row)
+        n_in_line_b = sum_num(row)
+        ansB+= n_in_line_b
 
     print("AnsA: ", ansA)
     print("AnsB: ", ansB)
+
