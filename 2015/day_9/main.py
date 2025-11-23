@@ -23,7 +23,7 @@ def parse_line(line):
     cities_arr =[ i.strip() for i in  cities.split(" to ")]
     return {'nodes': cities_arr, 'weight':weight}
 
-def dfs_distance()
+def dfs_distance():
     ...
 
 

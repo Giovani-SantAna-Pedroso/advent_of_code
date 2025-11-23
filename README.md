@@ -6,8 +6,8 @@ Legend: - , :Language used to solve the chalenge
 
 | Days | 2015   | 2016   | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023       | 2024   | 2025 |
 | ---- | ------ | ------ | ---- | ---- | ---- | ---- | ---- | ---- | ---------- | ------ | ---- |
-| 1_A  | Python | Python |      |      |      |      |      | C#   | Python     | Python |      |
-| 1_B  | Python | Python |      |      |      |      |      | C#   | Python     | Python |      |
+| 1_A  | Python | Python | C++  |      |      |      |      | C#   | Python     | Python |      |
+| 1_B  | Python | Python | C++  |      |      |      |      | C#   | Python     | Python |      |
 | 2_A  | Python | Python |      |      |      |      |      | C#   | Javascript | Python |      |
 | 2_B  | Python | Python |      |      |      |      |      | C#   | Javascript | Python |      |
 | 3_A  | Python | Python |      |      |      |      |      | C#   | Python     | Python |      |
